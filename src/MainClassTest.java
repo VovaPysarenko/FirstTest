@@ -18,6 +18,14 @@ public class MainClassTest{
         Assert.assertTrue("getClassNumber returns a number less than 45",Main.getClassNumber() >= 45);
     }
 
+    @Test
+    public void testGetClassString() {
+        Assert.assertTrue(
+                "getClassString does not contain word Hello or hello",
+                Main.getClassString().contains("Hello") || Main.getClassString().contains("hello")
+        );
+    }
+
 
 
 }
